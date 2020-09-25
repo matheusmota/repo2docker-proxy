@@ -17,7 +17,7 @@ INSTALLER_PATH=/tmp/miniforge-installer.sh
 # since this is run as root
 unset HOME
 
-time wget --quiet $URL -O ${INSTALLER_PATH}
+time wget --no-check-certificate --quiet $URL -O ${INSTALLER_PATH}
 chmod +x ${INSTALLER_PATH}
 
 # check sha256 checksum
